@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【ご案内】休憩集中タイマー クローズドテスト参加</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* EasyModeColor (Green) */
+            --primary-dark: #2E7D32;
+            --secondary-color: #03A9F4; /* TimerDisplayColor (Blue) */
+            --bg-color: #F8F9FA;
+            --text-color: #333333;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 90%;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .intro {
+            font-size: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .step-box {
+            background-color: #F1F8E9; /* Light green background */
+            border-left: 5px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .step-desc {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.1s;
+            box-sizing: border-box;
+            box-shadow: 0 4px 6px rgba(76, 175, 80, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            text-decoration: none;
+        }
+        
+        .btn:active {
+            transform: translateY(2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            box-shadow: 0 4px 6px rgba(3, 169, 244, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background-color: #0288D1;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 15px;
+            background-color: #FFF3E0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .email-display {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 15px;
+            word-break: break-all;
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 20px;
+            }
+            .header {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>休憩集中タイマー</h1>
+        <p>クローズドテスト 参加ガイド</p>
+    </div>
+
+    <div class="content">
+        <p class="intro">
+            アプリのリリースに向けたクローズドテストへご協力いただき誠にありがとうございます。<br>
+            以下の簡単な2ステップでアプリをインストールしていただけます。
+        </p>
+
+        <!-- STEP 1 -->
+        <div class="step-box">
+            <h2 class="step-title"><span class="step-number">1</span>テストグループに参加</h2>
+            <p class="step-desc">
+                Google Playでテスト版アプリをダウンロードする権限を得るために、まずテスター専用のGoogle Groupに参加してください。<br>
+                ※お使いのAndroid端末と同じGoogleアカウントでご参加ください。
+            </p>
+            <div class="email-display">
+                restfocustimer3@googlegroups.com
+            </div>
+            <!-- Note: users can join by visiting the group URL -->
+            <a href="https://groups.google.com/g/restfocustimer3" target="_blank" rel="noopener noreferrer" class="btn">
+                グループに参加する
+            </a>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step-box" style="background-color: #E1F5FE; border-left-color: var(--secondary-color);">
+            <h2 class="step-title" style="color: #0288D1;"><span class="step-number" style="background-color: var(--secondary-color);">2</span>アプリのインストール</h2>
+            <p class="step-desc">
+                グループへの参加が完了したら、以下のリンクからGoogle Playストアへ移動し、テスト版アプリをダウンロードしてください。
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.myapp.restfocustimer3" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                Google Playでインストール
+            </a>
+        </div>
+
+        <div class="note">
+            <strong>⚠️ ご注意</strong><br>
+            「アイテムが見つかりません」というエラー画面が出る場合は、以下の原因が考えられます。<br>
+            ・Step 1のグループへまだ参加（承認）されていない<br>
+            ・グループに参加したアカウントと、Playストアのアカウントが一致していない
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
